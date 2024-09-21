@@ -139,7 +139,7 @@ on:
       openwrt_kernel:
         description: "Select kernel version"
         required: false
-        default: "5.15.150."
+        default: "5.15.150"
         type: choice
         options:
           - 5.4.1_5.10.1
