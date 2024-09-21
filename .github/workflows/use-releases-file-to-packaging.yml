@@ -156,10 +156,10 @@ on:
       kernel_repo:
         description: "Set the kernel repository"
         required: false
-        default: "ophub/kernel"
+        default: "1877574385/kernel"
         type: choice
         options:
-          - ophub/kernel
+          - 1877574385/kernel
       kernel_usage:
         description: "Set the tags of the stable kernel."
         required: false
@@ -255,6 +255,7 @@ jobs:
           openwrt_path: openwrt/bin/targets/*/*/*rootfs.tar.gz
           openwrt_board: ${{ inputs.openwrt_board }}
           openwrt_kernel: ${{ inputs.openwrt_kernel }}
+          auto_kernel: ${{ inputs.auto_kernel }}
           kernel_repo: ${{ inputs.kernel_repo }}
           kernel_usage: ${{ inputs.kernel_usage }}
           builder_name: ${{ inputs.builder_name }}
