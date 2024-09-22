@@ -156,10 +156,10 @@ on:
       kernel_repo:
         description: "Set the kernel repository"
         required: false
-        default: "1877574385/kernel"
+        default: "ophub/kernel"
         type: choice
         options:
-          - 1877574385/kernel
+          - ophub/kernel
       kernel_usage:
         description: "Set the tags of the stable kernel."
         required: false
